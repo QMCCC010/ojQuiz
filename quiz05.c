@@ -37,7 +37,8 @@ int main(){
     for(int i = 0; i < n; i++){
         for(y = satellite[i].y - satellite[i].r; y <= satellite[i].y + satellite[i].r; y++){
             for(x = satellite[i].x - satellite[i].r; x <= satellite[i].x + satellite[i].r; x++){
-                if((x - satellite[i].x)*(x - satellite[i].x) + (y - satellite[i].y)*(y - satellite[i].y) <= satellite[i].r * satellite[i].r) pointLocation[x*max_y + y] = 1;
+                if((x - satellite[i].x)*(x - satellite[i].x) + (y - satellite[i].y)*(y - satellite[i].y) <= satellite[i].r * satellite[i].r) pointLocation[y*(max_x+1) + x] = 1;
+
             }
         }
     }
