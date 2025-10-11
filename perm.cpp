@@ -18,6 +18,6 @@ void perm(Type list, int k, int m) {
 }
 
 int main() {
-    int arr[3] = {1, 2, 3};
-    perm(arr, 0, 3);
+    int arr[4] = {1, 2, 3, 4};
+    perm(arr, 0, 4);
 }
