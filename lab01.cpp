@@ -49,7 +49,7 @@ int main() {
         p[i] = percentage / 100.0;
     }
 
-    // 计算dp[i][j]矩阵
+    // 计算dp[j]数组
     double result = possibleWin(num, p);
     
     // 输出总概率
